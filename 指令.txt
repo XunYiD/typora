@@ -1,0 +1,6 @@
+salloc -p common-gpu --job-name zw324 --nodelist=dkucc-core-gpu-01
+salloc -p l20-gpu --job-name zw324 --nodelist=dkucc-core-gpu-06
+ssh dkucc-core-gpu-01
+scancel 进程号
+pbsnodes
+tensorboard --logdir=/dkucc/home/zw324/Funcodec/egs/expriments/exp/text2audio_codec_lm_nq2_uni_rel_pos_small_qingshu1 --port=60012
